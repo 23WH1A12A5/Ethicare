@@ -1,8 +1,6 @@
-# 🛡️ Ethicare Guard ID
+# 🛡️ Ethicare 
 
-Ethicare Guard ID is an AI-powered image protection and misuse detection platform designed to help users safeguard their personal images from unauthorized access, distribution, and exploitation.
-
-The platform provides secure image locking, AI-based content classification, reverse image search simulation, complaint tracking, and real-time notifications through a modern and user-friendly web interface.
+Ethicare Guard ID is an AI-powered image protection and misuse detection platform designed to help users secure their personal images, detect unauthorized usage, and maintain digital privacy. The platform provides image locking, AI-based analysis, complaint management, misuse detection, and real-time security notifications through a modern web interface.
 
 ---
 
@@ -10,78 +8,51 @@ The platform provides secure image locking, AI-based content classification, rev
 
 ### 🔐 User Authentication
 - Secure user registration and login
-- Email and password authentication using Supabase
-- Profile management system
+- Supabase-based authentication
+- User profile management
 
 ### 🖼️ Image Protection
-- Upload personal images securely
-- Image locking mechanisms
-  - PIN Lock
-  - Face Recognition Lock
-  - Eye Recognition Lock
+- Secure image upload
+- PIN-based image locking
+- Face recognition lock (simulation)
+- Eye recognition lock (simulation)
 
 ### 🤖 AI-Based Image Analysis
-- Automatic image classification
-- Risk-level detection
-- Explicit content identification
+- Image classification
+- Risk-level assessment
+- Explicit content detection
 - Face detection simulation
 
 ### 🔍 Misuse Detection
 - Reverse image search simulation
-- Detect unauthorized image usage
-- Risk assessment and flagging
+- Unauthorized image usage detection
+- Risk identification and monitoring
 
 ### 📋 Complaint Management
-- File complaints for detected misuses
+- File complaints for image misuse
 - Track complaint status
 - Complaint history management
 
 ### 🔔 Notifications
-- Real-time alerts
-- Security warnings
-- Threat notifications
+- Security alerts
+- Risk notifications
+- Real-time updates
 
 ### 👨‍💼 Admin Dashboard
-- User management
-- Uploaded image monitoring
+- User monitoring
 - Complaint review system
-- Risk analysis dashboard
+- Uploaded image management
+- Risk analytics
 
-### 🎨 Modern UI/UX
+### 🎨 Modern User Interface
 - Responsive design
-- Dark/Light theme support
-- Interactive animations using Framer Motion
-- Built with Tailwind CSS and ShadCN UI
+- Dark and Light mode
+- Interactive animations
+- User-friendly dashboard
 
 ---
 
-## 🏗️ System Architecture
-
-```text
-User
- │
- ▼
-Authentication (Supabase)
- │
- ▼
-Dashboard
- ├── Profile Management
- ├── Image Upload
- ├── AI Classification
- ├── Image Locking
- ├── Misuse Detection
- ├── Complaint Tracking
- └── Notifications
-
-Admin Panel
- ├── User Monitoring
- ├── Image Monitoring
- └── Complaint Management
-```
-
----
-
-## 🛠️ Tech Stack
+## 🏗️ Tech Stack
 
 ### Frontend
 - React.js
@@ -93,7 +64,7 @@ Admin Panel
 
 ### Backend & Database
 - Supabase
-- PostgreSQL (via Supabase)
+- PostgreSQL
 
 ### State Management
 - React Query
@@ -109,9 +80,16 @@ Admin Panel
 ## 📂 Project Structure
 
 ```text
-ethicare-guard-id-main/
+ethicare-guard-id/
 │
 ├── public/
+├── screenshots/
+│   ├── home-page.png
+│   ├── complaint-management.png
+│   ├── complaint-tracking.png
+│   ├── image-upload.png
+│   └── user-account.png
+│
 ├── src/
 │   ├── components/
 │   ├── contexts/
@@ -137,64 +115,64 @@ ethicare-guard-id-main/
 
 ## 📸 Screenshots
 
-### Home Page
+### 🏠 Home Page
 
-![Home Page](screenshots/home.png)
+![Home Page](./screenshots/home-page.png)
 
-### Complaint Management
+### 📋 Complaint Management
 
-![Complaint Management](screenshots/Complaint.png)
+![Complaint Management](./screenshots/complaint-management.png)
 
-### Complaint Tracking
+### 📊 Complaint Tracking
 
-![Complaint Tracking](screenshots/complaint_tracking.png)
+![Complaint Tracking](./screenshots/complaint-tracking.png)
 
-### Image Upload
+### 🖼️ Image Upload
 
-![Image Upload](screenshots/image_upload.png)
+![Image Upload](./screenshots/image-upload.png)
 
-### User Account
+### 👤 User Account
 
-![User Account](screenshots/user account.png)
+![User Account](./screenshots/user-account.png)
 
 ---
 
 ## ⚙️ Installation
 
-### 1. Clone Repository
+### Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/ethicare-guard-id.git
+git clone https://github.com/YOUR_USERNAME/ethicare-guard-id.git
 ```
 
-### 2. Navigate to Project
+### Navigate to the Project Folder
 
 ```bash
 cd ethicare-guard-id
 ```
 
-### 3. Install Dependencies
+### Install Dependencies
 
 ```bash
 npm install
 ```
 
-### 4. Configure Environment Variables
+### Configure Environment Variables
 
-Create a `.env` file:
+Create a `.env` file in the root directory:
 
 ```env
 VITE_SUPABASE_URL=your_supabase_url
 VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
 ```
 
-### 5. Run Development Server
+### Run the Development Server
 
 ```bash
 npm run dev
 ```
 
-### 6. Build for Production
+### Build for Production
 
 ```bash
 npm run build
@@ -204,23 +182,23 @@ npm run build
 
 ## 🔄 Workflow
 
-1. User registers and logs in.
-2. User uploads personal images.
-3. AI analyzes image content.
+1. User registers and logs into the platform.
+2. Personal images are uploaded securely.
+3. AI analyzes uploaded images.
 4. Risk level is generated.
-5. User applies image lock.
-6. Reverse image search checks misuse.
-7. Alerts are generated if threats are detected.
-8. User can file complaints.
-9. Admin reviews complaints and updates status.
+5. User applies image protection methods.
+6. Reverse image search checks for misuse.
+7. Alerts are generated for suspicious activity.
+8. Complaints can be filed and tracked.
+9. Admin reviews and updates complaint status.
 
 ---
 
 ## 🎯 Future Enhancements
 
-- Real AI image classification models
+- Real AI-powered image classification
 - Facial recognition integration
-- OCR-based content analysis
+- OCR-based image analysis
 - Automated takedown requests
 - Blockchain-based image ownership verification
 - Mobile application support
@@ -228,19 +206,19 @@ npm run build
 
 ---
 
-## 👥 Contributors
+## 🌟 Project Objective
+
+The goal of Ethicare Guard ID is to provide a secure platform that helps individuals protect their personal images, detect misuse, and maintain privacy in the digital world using AI-driven technologies.
+
+---
+
+## 👨‍💻 Contributors
 
 - Sai Sahithi
-- Project Team Members
+- Team Members
 
 ---
 
 ## 📄 License
 
 This project is developed for educational and research purposes.
-
----
-
-## 🌟 Project Objective
-
-To provide individuals with a secure platform that leverages AI technologies to protect personal images, detect misuse, and ensure digital privacy in today's internet-driven world.
