@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 220 25% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 25% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 25% 10%;
+    --primary: 199 89% 48%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 20% 94%;
+    --secondary-foreground: 220 25% 10%;
+    --muted: 210 20% 96%;
+    --muted-foreground: 220 10% 46%;
+    --accent: 172 66% 50%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 214 20% 90%;
+    --input: 214 20% 90%;
+    --ring: 199 89% 48%;
+    --radius: 0.75rem;
+
+    --cyber-glow: 199 89% 48%;
+    --cyber-accent: 172 66% 50%;
+    --cyber-warning: 38 92% 50%;
+    --cyber-danger: 0 84% 60%;
+    --cyber-success: 142 71% 45%;
+    --cyber-surface: 210 20% 96%;
+
+    --sidebar-background: 220 25% 10%;
+    --sidebar-foreground: 210 20% 90%;
+    --sidebar-primary: 199 89% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 25% 16%;
+    --sidebar-accent-foreground: 210 20% 90%;
+    --sidebar-border: 220 20% 20%;
+    --sidebar-ring: 199 89% 48%;
+  }
+
+  .dark {
+    --background: 220 25% 6%;
+    --foreground: 210 20% 94%;
+    --card: 220 25% 10%;
+    --card-foreground: 210 20% 94%;
+    --popover: 220 25% 10%;
+    --popover-foreground: 210 20% 94%;
+    --primary: 199 89% 48%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 25% 16%;
+    --secondary-foreground: 210 20% 94%;
+    --muted: 220 25% 14%;
+    --muted-foreground: 215 15% 55%;
+    --accent: 172 66% 50%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 20% 18%;
+    --input: 220 20% 18%;
+    --ring: 199 89% 48%;
+
+    --cyber-glow: 199 89% 48%;
+    --cyber-accent: 172 66% 50%;
+    --cyber-warning: 38 92% 50%;
+    --cyber-danger: 0 72% 51%;
+    --cyber-success: 142 71% 45%;
+    --cyber-surface: 220 25% 12%;
+
+    --sidebar-background: 220 30% 5%;
+    --sidebar-foreground: 210 20% 90%;
+    --sidebar-primary: 199 89% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 25% 12%;
+    --sidebar-accent-foreground: 210 20% 90%;
+    --sidebar-border: 220 20% 14%;
+    --sidebar-ring: 199 89% 48%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+  }
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+@layer utilities {
+  .cyber-glow {
+    box-shadow: 0 0 20px hsl(var(--cyber-glow) / 0.15), 0 0 40px hsl(var(--cyber-glow) / 0.05);
+  }
+  .cyber-glow-strong {
+    box-shadow: 0 0 20px hsl(var(--cyber-glow) / 0.3), 0 0 60px hsl(var(--cyber-glow) / 0.1);
+  }
+  .glass {
+    background: hsl(var(--card) / 0.7);
+    backdrop-filter: blur(12px);
+    border: 1px solid hsl(var(--border) / 0.5);
+  }
+  .glass-strong {
+    background: hsl(var(--card) / 0.85);
+    backdrop-filter: blur(20px);
+    border: 1px solid hsl(var(--border) / 0.6);
+  }
+  .gradient-cyber {
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+  }
+  .text-gradient-cyber {
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .cyber-grid {
+    background-image: 
+      linear-gradient(hsl(var(--primary) / 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--primary) / 0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+  .dark .cyber-grid {
+    background-image: 
+      linear-gradient(hsl(var(--primary) / 0.06) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--primary) / 0.06) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+}
