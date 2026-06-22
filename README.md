@@ -125,15 +125,15 @@ ethicare-guard-id/
 
 ### 📊 Complaint Tracking
 
-![Complaint Tracking](./screenshots/complaint-tracking.png)
+![Complaint Tracking](./screenshots/complaint_tracking.png)
 
 ### 🖼️ Image Upload
 
-![Image Upload](./screenshots/image-upload.png)
+![Image Upload](./screenshots/image_upload.png)
 
 ### 👤 User Account
 
-![User Account](./screenshots/user-account.png)
+![User Account](./screenshots/useraccount.png)
 
 ---
 
