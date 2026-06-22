@@ -133,7 +133,7 @@ ethicare-guard-id/
 
 ### 👤 User Account
 
-![User Account](./screenshots/useraccount.png)
+![User Account](./screenshots/user account.png)
 
 ---
 
