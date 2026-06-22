@@ -117,11 +117,11 @@ ethicare-guard-id/
 
 ### 🏠 Home Page
 
-![Home Page](./screenshots/home-page.png)
+![Home Page](./screenshots/home.png)
 
 ### 📋 Complaint Management
 
-![Complaint Management](./screenshots/complaint-management.png)
+![Complaint Management](./screenshots/Complaint.png)
 
 ### 📊 Complaint Tracking
 
